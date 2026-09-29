@@ -1,0 +1,47 @@
+.red{
+    background-color: red;
+}
+
+.yellow{
+    color:  darkblue;
+}
+
+.brown{
+    border: 12px dotted brown;
+}
+
+.pos{
+    width: 50%;
+    height: 400px;
+    margin: 100px 200px 300px 400px;
+    padding: 100px 200px 300px 400px;
+    border-radius: 50px;
+    /* margin:100px; */
+    /* margin-top: 300px;
+    margin-left: 400px;
+    margin-bottom: 500px;
+    margin-right: 500px; */
+    /* padding: 100px; */
+    /* padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px; */
+}
+
+.mediaQuery{
+    background-color: red;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+    .mediaQuery{
+        background-color: yellow;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 40px;
+    }
+}

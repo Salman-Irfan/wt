@@ -1,0 +1,74 @@
+.btn {
+	display: block;
+	background-color: aqua;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: rgb(57, 127, 127);
+	cursor: pointer;
+}
+
+.block {
+	display: block;
+	background-color: red;
+}
+
+a {
+	display: inline;
+	background-color: green;
+}
+.nav {
+	background-color: blue;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	grid-template-columns: repeat(5, 1fr);
+
+	gap: 20px;
+}
+
+.child {
+	background-color: burlywood;
+	height: 250px;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+    10% {
+        transform: rotateX(45deg);
+    }
+    20%{
+        transform: translateX(400px);
+    }
+    30% {
+        transform: rotateY(45deg);
+    }
+    40%{
+        background-color: blueviolet;
+        transform: scaleX(250px);
+        transform: scaleY(250px);
+    }
+    60% {
+        transform: rotateZ(45deg);
+    }
+	100% {
+        background-color: chartreuse;
+		transform: translateX(1000px);
+	}
+}
+.one {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation: slide 8s infinite alternate;
+}
